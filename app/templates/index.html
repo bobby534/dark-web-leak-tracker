@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Web Leak Tracker</title>
 </head>
 <body>
     <h1>🔍 Breach Lookup</h1>
     <form method="POST">
-        <input type="text" name="email" placeholder="Enter email or domain" required>
+        <input type="text" name="email" placeholder="Enter email or username" required>
         <button type="submit">Search</button>
     </form>
+
+    {% if results %}
+        <h2>Breaches Found: {{ results.found }}</h2>
+        <ul>
+            {% for source in results.sources %}
+                <li><strong>{{ source.name }}</strong> — {{ source.date }}</li>
+            {% endfor %}
+        </ul>
+
+        <p>📌 Fields exposed: {{ results.fields | join(', ') }}</p>
+        <small>Powered by <a href="https://leakcheck.io" target="_blank">LeakCheck</a></small>
+    {% elif error %}
+        <p style="color: red;">Error: {{ error }}</p>
+    {% endif %}
 </body>
 </html>
