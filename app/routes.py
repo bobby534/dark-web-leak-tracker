@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request
-from app.utils import check_breaches, generate_charts
+from app.utils import check_breaches, generate_charts, clean_sources_light
 
 main = Blueprint("main", __name__)
 
@@ -7,7 +7,7 @@ main = Blueprint("main", __name__)
 def index():
     results = None
     error = None
-    charts = {"timeline": None}  # Only timeline now
+    charts = {"timeline": None}
 
     if request.method == "POST":
         query = request.form.get("email")
@@ -15,6 +15,8 @@ def index():
             data = check_breaches(query)
 
             if data.get("success"):
+                cleaned_sources = clean_sources_light(data["sources"])
+                data["sources"] = cleaned_sources  # Overwrite with cleaned sources
                 results = data
                 charts = generate_charts(data)
             else:

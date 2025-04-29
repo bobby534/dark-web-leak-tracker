@@ -23,7 +23,9 @@ def generate_charts(breach_data):
     timeline_fig = None
 
     if "sources" in breach_data:
-        df = pd.DataFrame(breach_data["sources"])
+        cleaned_sources = clean_sources_light(breach_data["sources"])
+        df = pd.DataFrame(cleaned_sources)
+
         if not df.empty:
             df['date'] = pd.to_datetime(df['date'], format="%Y-%m")
             df['year'] = df['date'].dt.year
@@ -33,3 +35,23 @@ def generate_charts(breach_data):
     return {
         "timeline": timeline_fig.to_html(full_html=False) if timeline_fig else None
     }
+
+def clean_sources_light(sources):
+    """
+    Light cleaning:
+    - Only keep sources that have a valid 'name' and 'date'
+    - Ignore garbage, keep small breaches to preserve enough data
+    """
+    cleaned = []
+
+    for breach in sources:
+        name = breach.get("name", "").strip()
+        date = breach.get("date", "").strip()
+
+        if name and date and len(date) >= 7:  # date should be at least "YYYY-MM"
+            cleaned.append({
+                "name": name,
+                "date": date
+            })
+
+    return cleaned
