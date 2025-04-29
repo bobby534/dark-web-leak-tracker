@@ -1,6 +1,9 @@
 import requests
 import pandas as pd
 import plotly.express as px
+import json
+from datetime import datetime
+import os
 
 def check_breaches(email_or_username):
     url = f"https://leakcheck.io/api/public?check={email_or_username}"
@@ -55,3 +58,51 @@ def clean_sources_light(sources):
             })
 
     return cleaned
+
+def save_search(query, breach_data, history_file="data/search_history.json"):
+    # Create a new search record
+    search_record = {
+        "query": query,
+        "timestamp": datetime.now().isoformat(),
+        "found": breach_data.get("found", 0),
+        "sources": breach_data.get("sources", [])
+    }
+
+    # Load existing history (or start fresh)
+    if os.path.exists(history_file):
+        with open(history_file, "r") as f:
+            try:
+                history = json.load(f)
+            except json.JSONDecodeError:
+                history = []
+    else:
+        history = []
+
+    # Append the new record
+    history.append(search_record)
+
+    # Save it back
+    with open(history_file, "w") as f:
+        json.dump(history, f, indent=4)
+
+def save_query_log(query, found_count, log_file="data/query_log.json"):
+    record = {
+        "query": query,
+        "timestamp": datetime.now().isoformat(),
+        "found": found_count
+    }
+
+    # Load or create
+    if os.path.exists(log_file):
+        with open(log_file, "r") as f:
+            try:
+                log = json.load(f)
+            except json.JSONDecodeError:
+                log = []
+    else:
+        log = []
+
+    log.append(record)
+
+    with open(log_file, "w") as f:
+        json.dump(log, f, indent=4)

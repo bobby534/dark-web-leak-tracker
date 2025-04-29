@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request
-from app.utils import check_breaches, generate_charts, clean_sources_light
+from app.utils import check_breaches, generate_charts, clean_sources_light, save_search, save_query_log
 
 main = Blueprint("main", __name__)
 
@@ -19,6 +19,8 @@ def index():
                 data["sources"] = cleaned_sources  # Overwrite with cleaned sources
                 results = data
                 charts = generate_charts(data)
+                save_search(query, data)  # Save search to history file
+                save_query_log(query, data["found"]) # Queries only
             else:
                 error = data.get("error", "Something went wrong.")
 
