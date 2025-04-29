@@ -25,5 +25,11 @@
     {% elif error %}
         <p style="color: red;">Error: {{ error }}</p>
     {% endif %}
+
+    {% if charts.timeline %}
+    <h3>📅 Breaches Over Time</h3>
+    {{ charts.timeline|safe }}
+    {% endif %}
+
 </body>
 </html>
