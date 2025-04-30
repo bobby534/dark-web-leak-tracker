@@ -18,6 +18,10 @@
             {% for source in results.sources %}
                 <li><strong>{{ source.name }}</strong> — {{ source.date }}</li>
             {% endfor %}
+            <form action="/add_to_watchlist" method="post">
+                <input type="hidden" name="query" value="{{ results.query }}">
+                <button type="submit">📌 Add to Watchlist</button>
+            </form>            
         </ul>
     
     {% if results.sources %}
@@ -34,6 +38,16 @@
     {% elif error %}
         <p style="color: red;">Error: {{ error }}</p>
     {% endif %}
+
+    {% if watchlist %}
+        <h3>🔔 Watchlist</h3>
+        <ul>
+            {% for item in watchlist %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
 
     {% if charts.timeline %}
     <h3>📅 Breaches Over Time</h3>

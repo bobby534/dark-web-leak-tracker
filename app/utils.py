@@ -106,3 +106,25 @@ def save_query_log(query, found_count, log_file="data/query_log.json"):
 
     with open(log_file, "w") as f:
         json.dump(log, f, indent=4)
+
+def add_to_watchlist(query, watchlist_file="data/watchlist.json"):
+    query = query.strip().lower()
+    
+    if os.path.exists(watchlist_file):
+        with open(watchlist_file, "r") as f:
+            try:
+                watchlist = json.load(f)
+            except json.JSONDecodeError:
+                watchlist = []
+    else:
+        watchlist = []
+
+    # Don't add duplicates
+    if query not in watchlist:
+        watchlist.append(query)
+
+        with open(watchlist_file, "w") as f:
+            json.dump(watchlist, f, indent=4)
+
+        return True  # Added successfully
+    return False  # Already existed

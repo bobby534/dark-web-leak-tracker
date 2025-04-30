@@ -1,8 +1,10 @@
-from flask import Blueprint, render_template, request
-from app.utils import check_breaches, generate_charts, clean_sources_light, save_search, save_query_log
-from flask import send_file
+import os
+from flask import Blueprint, send_file, redirect, render_template, request
+from app.utils import add_to_watchlist, check_breaches, generate_charts, clean_sources_light, save_search, save_query_log
 import csv
 import io
+import json
+
 
 main = Blueprint("main", __name__)
 
@@ -11,6 +13,8 @@ def index():
     results = None
     error = None
     charts = {"timeline": None}
+    watchlist = []
+    watchlist_file = "data/watchlist.json"
 
     if request.method == "POST":
         query = request.form.get("email")
@@ -27,8 +31,14 @@ def index():
                 save_query_log(query, data["found"]) # Queries only
             else:
                 error = data.get("error", "Something went wrong.")
-
-    return render_template("index.html", results=results, error=error, charts=charts)
+    if os.path.exists(watchlist_file):
+        with open(watchlist_file, "r") as f:
+            try:
+                watchlist = json.load(f)
+            except json.JSONDecodeError:
+                watchlist = []
+                
+    return render_template("index.html", results=results, error=error, charts=charts, watchlist=watchlist)
 
 
 @main.route("/export_csv", methods=["POST"])
@@ -64,3 +74,14 @@ def export_csv():
         as_attachment=True,
         download_name=filename
     )
+
+@main.route("/add_to_watchlist", methods=["POST"])
+def add_to_watchlist_route():
+    query = request.form.get("query")
+    if not query:
+        return "Missing query", 400
+
+    success = add_to_watchlist(query)
+    message = "Added to watchlist" if success else "Already in watchlist"
+    
+    return redirect("/", code=302)  # Or flash message later
