@@ -381,5 +381,1379 @@
                 "date": "2015-11"
             }
         ]
+    },
+    {
+        "query": "tom",
+        "timestamp": "2025-04-29T16:52:44.324139",
+        "found": 1000,
+        "sources": [
+            {
+                "name": "RuneHQ.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "Exvagos.com",
+                "date": "2022-07"
+            },
+            {
+                "name": "AlpineReplay.com",
+                "date": "2020-06"
+            },
+            {
+                "name": "ForumCommunity.net",
+                "date": "2016-06"
+            },
+            {
+                "name": "CheapAssGamer.com",
+                "date": "2014-11"
+            },
+            {
+                "name": "BitTorrent.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "BlankMediaGames.com",
+                "date": "2018-12"
+            },
+            {
+                "name": "PokeCommunity.com",
+                "date": "2012-12"
+            },
+            {
+                "name": "Hongfire.com",
+                "date": "2015-03"
+            },
+            {
+                "name": "Codeleakers.com",
+                "date": "2021-07"
+            },
+            {
+                "name": "Anime-Planet.net",
+                "date": "2016-01"
+            },
+            {
+                "name": "LucasForums.com",
+                "date": "2016-04"
+            },
+            {
+                "name": "OVH",
+                "date": "2015-05"
+            },
+            {
+                "name": "Benchmark.rs",
+                "date": "2019-11"
+            },
+            {
+                "name": "CouponMom / ArmorGames",
+                "date": "2014-02"
+            },
+            {
+                "name": "Wattpad.com",
+                "date": "2020-05"
+            },
+            {
+                "name": "Evony.com",
+                "date": "2016-06"
+            },
+            {
+                "name": "Funimation.com",
+                "date": "2016-07"
+            },
+            {
+                "name": "CapitalGames.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "Bitshacking.com",
+                "date": "2014-02"
+            },
+            {
+                "name": "PS3Hax.net",
+                "date": "2015-07"
+            },
+            {
+                "name": "MoDaCo.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "xHamster.com",
+                "date": "2013-06"
+            },
+            {
+                "name": "PlanetCalypso.com",
+                "date": "2019-07"
+            },
+            {
+                "name": "TGBUS.com",
+                "date": "2016-11"
+            },
+            {
+                "name": "Telderi.ru",
+                "date": "2021-03"
+            },
+            {
+                "name": "360icons.com",
+                "date": "2013-10"
+            },
+            {
+                "name": "OnVerse.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "Zynga.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "Mate1.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "NordicGames.at",
+                "date": "2016-02"
+            },
+            {
+                "name": "Rubukkit.org",
+                "date": "2016-11"
+            },
+            {
+                "name": "HackForums.net",
+                "date": "2011-06"
+            },
+            {
+                "name": "Pokebip.com",
+                "date": "2015-07"
+            },
+            {
+                "name": "Ogusers",
+                "date": "2020-04"
+            },
+            {
+                "name": "MyRepoSpace.com",
+                "date": "2015-03"
+            },
+            {
+                "name": "DaFont.com",
+                "date": "2017-05"
+            },
+            {
+                "name": "Techimo.com",
+                "date": "2016-12"
+            },
+            {
+                "name": "CardingMafia.ws",
+                "date": "2016-01"
+            },
+            {
+                "name": "FlashFlashRevolution.com",
+                "date": "2019-07"
+            },
+            {
+                "name": "Stickam.com",
+                "date": "2017-11"
+            },
+            {
+                "name": "Fling.com",
+                "date": "2011-03"
+            },
+            {
+                "name": "iMesh.com",
+                "date": "2013-09"
+            },
+            {
+                "name": "DayZ.com",
+                "date": "2016-03"
+            },
+            {
+                "name": "ArmorGames.com",
+                "date": "2019-01"
+            },
+            {
+                "name": "Sprashivai.ru",
+                "date": "2015-05"
+            },
+            {
+                "name": "Gamers.nu",
+                "date": "2011-11"
+            },
+            {
+                "name": "Dirtycode.io",
+                "date": "2020-05"
+            },
+            {
+                "name": "Famm.us",
+                "date": "2020-09"
+            },
+            {
+                "name": "gPotato.com",
+                "date": "2006-11"
+            },
+            {
+                "name": "Storenvy",
+                "date": "2019-03"
+            },
+            {
+                "name": "CrackingForum.com",
+                "date": "2014-11"
+            },
+            {
+                "name": "VipHackForums.net",
+                "date": "2013-11"
+            },
+            {
+                "name": "Poshmark.com",
+                "date": "2018-05"
+            },
+            {
+                "name": "Readnovel.com",
+                "date": "2019-04"
+            },
+            {
+                "name": "FFShrine.org",
+                "date": "2015-09"
+            },
+            {
+                "name": "vBulletin.org",
+                "date": "2016-02"
+            },
+            {
+                "name": "Villavu.com",
+                "date": "2013-11"
+            },
+            {
+                "name": "WiiUISO.com",
+                "date": "2015-08"
+            },
+            {
+                "name": "Scam.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "DLH.net",
+                "date": "2016-07"
+            },
+            {
+                "name": "rbx.rocks",
+                "date": "2018-08"
+            },
+            {
+                "name": "MajorGeeks.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "PSPISO.com",
+                "date": "2015-09"
+            },
+            {
+                "name": "RSBoards.com",
+                "date": "2013-07"
+            },
+            {
+                "name": "Ria.ru",
+                "date": "2022-04"
+            },
+            {
+                "name": "Last.fm",
+                "date": "2012-07"
+            },
+            {
+                "name": "IPMart-Forum.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "Webhostingtalk.com",
+                "date": "2016-09"
+            },
+            {
+                "name": "Strongholdkingdoms.com",
+                "date": "2018-07"
+            },
+            {
+                "name": "DDO.com",
+                "date": "2013-04"
+            },
+            {
+                "name": "Crimecraft.mayngames.com",
+                "date": "2021-01"
+            },
+            {
+                "name": "Bolt.cd",
+                "date": "2017-03"
+            },
+            {
+                "name": "Torrent-Invites.com",
+                "date": "2016-07"
+            },
+            {
+                "name": "Board.freeones.com",
+                "date": "2018-01"
+            },
+            {
+                "name": "R2Games.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "Avast.com",
+                "date": "2014-05"
+            },
+            {
+                "name": "Mpgh.net",
+                "date": "2015-10"
+            },
+            {
+                "name": "8Tracks.com",
+                "date": "2017-06"
+            },
+            {
+                "name": "Mobifriends",
+                "date": "2019-11"
+            },
+            {
+                "name": "ILikeCheats.com",
+                "date": "2015-04"
+            },
+            {
+                "name": "CashCrate.com",
+                "date": "2016-11"
+            },
+            {
+                "name": "Duelingnetwork.com",
+                "date": "2017-03"
+            },
+            {
+                "name": "500px.com",
+                "date": "2017-11"
+            },
+            {
+                "name": "Canva.com",
+                "date": "2019-05"
+            },
+            {
+                "name": "Demonforums.net",
+                "date": "2019-02"
+            },
+            {
+                "name": "Sexclub.ru",
+                "date": "2021-07"
+            },
+            {
+                "name": "Rewasd.com",
+                "date": "2019-08"
+            },
+            {
+                "name": "MSPAforums.com",
+                "date": "2016-02"
+            },
+            {
+                "name": "Bookmate.com",
+                "date": "2018-07"
+            },
+            {
+                "name": "WeHeartIt.com",
+                "date": "2013-10"
+            },
+            {
+                "name": "Solomid.net",
+                "date": "2014-10"
+            },
+            {
+                "name": "OwnedCore.com",
+                "date": "2013-07"
+            },
+            {
+                "name": "AndroidForums.com",
+                "date": "2011-10"
+            }
+        ]
+    },
+    {
+        "query": "bob",
+        "timestamp": "2025-04-29T16:53:11.157719",
+        "found": 1000,
+        "sources": [
+            {
+                "name": "Cracked.to",
+                "date": "2019-07"
+            },
+            {
+                "name": "Ria.ru",
+                "date": "2022-04"
+            },
+            {
+                "name": "500px.com",
+                "date": "2017-11"
+            },
+            {
+                "name": "WiiHacks.com",
+                "date": "2013-08"
+            },
+            {
+                "name": "Last.fm",
+                "date": "2012-07"
+            },
+            {
+                "name": "Amplitude-Studios.com",
+                "date": "2016-04"
+            },
+            {
+                "name": "CapitalGames.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "GameTurk.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "Telefon-Treff.de",
+                "date": "2020-06"
+            },
+            {
+                "name": "Funimation.com",
+                "date": "2016-07"
+            },
+            {
+                "name": "Strongholdkingdoms.com",
+                "date": "2018-07"
+            },
+            {
+                "name": "Hongfire.com",
+                "date": "2015-03"
+            },
+            {
+                "name": "IPMart-Forum.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "xHamster.com",
+                "date": "2013-06"
+            },
+            {
+                "name": "gPotato.com",
+                "date": "2006-11"
+            },
+            {
+                "name": "Torrent-Invites.com",
+                "date": "2016-07"
+            },
+            {
+                "name": "Epicbot.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "CouponMom / ArmorGames",
+                "date": "2014-02"
+            },
+            {
+                "name": "R2Games.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "Void.to",
+                "date": "2019-06"
+            },
+            {
+                "name": "Zynga.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "Pokebip.com",
+                "date": "2015-07"
+            },
+            {
+                "name": "Dubsmash.com",
+                "date": "2018-12"
+            },
+            {
+                "name": "Bitly.com",
+                "date": "2014-04"
+            },
+            {
+                "name": "OnVerse.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "Board.freeones.com",
+                "date": "2018-01"
+            },
+            {
+                "name": "VBForums.com",
+                "date": "2016-06"
+            },
+            {
+                "name": "PokeCommunity.com",
+                "date": "2012-12"
+            },
+            {
+                "name": "Gamers.nu",
+                "date": "2011-11"
+            },
+            {
+                "name": "Waydate.com",
+                "date": "2017-11"
+            },
+            {
+                "name": "OwnagePranks.com",
+                "date": "2016-07"
+            },
+            {
+                "name": "DDO.com",
+                "date": "2013-04"
+            },
+            {
+                "name": "DayZ.com",
+                "date": "2016-03"
+            },
+            {
+                "name": "MajorGeeks.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "BlankMediaGames.com",
+                "date": "2018-12"
+            },
+            {
+                "name": "PSPISO.com",
+                "date": "2015-09"
+            },
+            {
+                "name": "Bitshacking.com",
+                "date": "2014-02"
+            },
+            {
+                "name": "360icons.com",
+                "date": "2013-10"
+            },
+            {
+                "name": "Mate1.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "Coinmama.com",
+                "date": "2017-08"
+            },
+            {
+                "name": "Avast.com",
+                "date": "2014-05"
+            },
+            {
+                "name": "CrackingForum.com",
+                "date": "2014-11"
+            },
+            {
+                "name": "iMesh.com",
+                "date": "2013-09"
+            },
+            {
+                "name": "rbx.rocks",
+                "date": "2018-08"
+            },
+            {
+                "name": "Evony.com",
+                "date": "2016-06"
+            },
+            {
+                "name": "Stickam.com",
+                "date": "2017-11"
+            },
+            {
+                "name": "CDProjektRed.com",
+                "date": "2016-02"
+            },
+            {
+                "name": "VimeWorld.ru",
+                "date": "2017-11"
+            },
+            {
+                "name": "lolzteam.net",
+                "date": "2019-02"
+            },
+            {
+                "name": "ILikeCheats.com",
+                "date": "2015-04"
+            },
+            {
+                "name": "CheapAssGamer.com",
+                "date": "2014-11"
+            },
+            {
+                "name": "DaFont.com",
+                "date": "2017-05"
+            },
+            {
+                "name": "vBulletin.org",
+                "date": "2016-02"
+            },
+            {
+                "name": "Xbox360ISO.com",
+                "date": "2015-09"
+            },
+            {
+                "name": "Sprashivai.ru",
+                "date": "2015-05"
+            },
+            {
+                "name": "Edaboard.com",
+                "date": "2014-11"
+            },
+            {
+                "name": "Demonforums.net",
+                "date": "2019-02"
+            },
+            {
+                "name": "BitTorrent.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "Scam.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "Tout.com",
+                "date": "2014-09"
+            },
+            {
+                "name": "PSX-Scene.com",
+                "date": "2016-04"
+            },
+            {
+                "name": "VipHackForums.net",
+                "date": "2013-11"
+            },
+            {
+                "name": "Canva.com",
+                "date": "2019-05"
+            },
+            {
+                "name": "BlackSpigot.com",
+                "date": "2019-07"
+            },
+            {
+                "name": "Techimo.com",
+                "date": "2016-12"
+            },
+            {
+                "name": "Anilibria.tv",
+                "date": "2018-08"
+            },
+            {
+                "name": "TheBot.net",
+                "date": "2012-07"
+            },
+            {
+                "name": "MyRepoSpace.com",
+                "date": "2015-03"
+            },
+            {
+                "name": "AlpineReplay.com",
+                "date": "2020-06"
+            },
+            {
+                "name": "Magicduel.com",
+                "date": "2023-08"
+            },
+            {
+                "name": "EmuParadise.me",
+                "date": "2018-04"
+            },
+            {
+                "name": "LucasForums.com",
+                "date": "2016-04"
+            },
+            {
+                "name": "Nextgenupdate.com",
+                "date": "2013-12"
+            },
+            {
+                "name": "PlanetCalypso.com",
+                "date": "2019-07"
+            },
+            {
+                "name": "MoDaCo.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "ArmorGames.com",
+                "date": "2019-01"
+            },
+            {
+                "name": "OVH",
+                "date": "2015-05"
+            },
+            {
+                "name": "Anime-Planet.net",
+                "date": "2016-01"
+            },
+            {
+                "name": "Fling.com",
+                "date": "2011-03"
+            },
+            {
+                "name": "CardingMafia.ws",
+                "date": "2016-01"
+            },
+            {
+                "name": "MangaFox.me",
+                "date": "2016-07"
+            },
+            {
+                "name": "NordicGames.at",
+                "date": "2016-02"
+            },
+            {
+                "name": "FFShrine.org",
+                "date": "2015-09"
+            },
+            {
+                "name": "ForumCommunity.net",
+                "date": "2016-06"
+            },
+            {
+                "name": "Dirtycode.io",
+                "date": "2020-05"
+            }
+        ]
+    },
+    {
+        "query": "toomo",
+        "timestamp": "2025-04-29T16:53:14.353981",
+        "found": 31,
+        "sources": [
+            {
+                "name": "GFAN.com",
+                "date": "2016-10"
+            },
+            {
+                "name": "Famm.us",
+                "date": "2020-09"
+            },
+            {
+                "name": "TGBUS.com",
+                "date": "2016-11"
+            },
+            {
+                "name": "gPotato.com",
+                "date": "2006-11"
+            },
+            {
+                "name": "Lifebear.com",
+                "date": "2019-02"
+            },
+            {
+                "name": "Poshmark.com",
+                "date": "2018-05"
+            },
+            {
+                "name": "Zynga.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "Loveplanet.ru",
+                "date": "2014-11"
+            },
+            {
+                "name": "Mate1.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "NexusMods.com",
+                "date": "2013-07"
+            },
+            {
+                "name": "AdultFriendFinder",
+                "date": "2016-10"
+            },
+            {
+                "name": "Dubsmash.com",
+                "date": "2018-12"
+            },
+            {
+                "name": "Last.fm",
+                "date": "2012-07"
+            },
+            {
+                "name": "Bitly.com",
+                "date": "2014-04"
+            },
+            {
+                "name": "Atmeltomo.com",
+                "date": "2021-04"
+            },
+            {
+                "name": "Deezer.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "StockX.com",
+                "date": "2019-07"
+            },
+            {
+                "name": "Fling.com",
+                "date": "2011-03"
+            },
+            {
+                "name": "MyFitnessPal.com",
+                "date": "2018-02"
+            },
+            {
+                "name": "R2Games.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "Dailymotion.com",
+                "date": "2016-10"
+            },
+            {
+                "name": "17.media",
+                "date": "2016-02"
+            }
+        ]
+    },
+    {
+        "query": "tom",
+        "timestamp": "2025-04-29T16:53:16.370912",
+        "found": 1000,
+        "sources": [
+            {
+                "name": "RuneHQ.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "Exvagos.com",
+                "date": "2022-07"
+            },
+            {
+                "name": "AlpineReplay.com",
+                "date": "2020-06"
+            },
+            {
+                "name": "ForumCommunity.net",
+                "date": "2016-06"
+            },
+            {
+                "name": "CheapAssGamer.com",
+                "date": "2014-11"
+            },
+            {
+                "name": "BitTorrent.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "BlankMediaGames.com",
+                "date": "2018-12"
+            },
+            {
+                "name": "PokeCommunity.com",
+                "date": "2012-12"
+            },
+            {
+                "name": "Hongfire.com",
+                "date": "2015-03"
+            },
+            {
+                "name": "Codeleakers.com",
+                "date": "2021-07"
+            },
+            {
+                "name": "Anime-Planet.net",
+                "date": "2016-01"
+            },
+            {
+                "name": "LucasForums.com",
+                "date": "2016-04"
+            },
+            {
+                "name": "OVH",
+                "date": "2015-05"
+            },
+            {
+                "name": "Benchmark.rs",
+                "date": "2019-11"
+            },
+            {
+                "name": "CouponMom / ArmorGames",
+                "date": "2014-02"
+            },
+            {
+                "name": "Wattpad.com",
+                "date": "2020-05"
+            },
+            {
+                "name": "Evony.com",
+                "date": "2016-06"
+            },
+            {
+                "name": "Funimation.com",
+                "date": "2016-07"
+            },
+            {
+                "name": "CapitalGames.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "Bitshacking.com",
+                "date": "2014-02"
+            },
+            {
+                "name": "PS3Hax.net",
+                "date": "2015-07"
+            },
+            {
+                "name": "MoDaCo.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "xHamster.com",
+                "date": "2013-06"
+            },
+            {
+                "name": "PlanetCalypso.com",
+                "date": "2019-07"
+            },
+            {
+                "name": "TGBUS.com",
+                "date": "2016-11"
+            },
+            {
+                "name": "Telderi.ru",
+                "date": "2021-03"
+            },
+            {
+                "name": "360icons.com",
+                "date": "2013-10"
+            },
+            {
+                "name": "OnVerse.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "Zynga.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "Mate1.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "NordicGames.at",
+                "date": "2016-02"
+            },
+            {
+                "name": "Rubukkit.org",
+                "date": "2016-11"
+            },
+            {
+                "name": "HackForums.net",
+                "date": "2011-06"
+            },
+            {
+                "name": "Pokebip.com",
+                "date": "2015-07"
+            },
+            {
+                "name": "Ogusers",
+                "date": "2020-04"
+            },
+            {
+                "name": "MyRepoSpace.com",
+                "date": "2015-03"
+            },
+            {
+                "name": "DaFont.com",
+                "date": "2017-05"
+            },
+            {
+                "name": "Techimo.com",
+                "date": "2016-12"
+            },
+            {
+                "name": "CardingMafia.ws",
+                "date": "2016-01"
+            },
+            {
+                "name": "FlashFlashRevolution.com",
+                "date": "2019-07"
+            },
+            {
+                "name": "Stickam.com",
+                "date": "2017-11"
+            },
+            {
+                "name": "Fling.com",
+                "date": "2011-03"
+            },
+            {
+                "name": "iMesh.com",
+                "date": "2013-09"
+            },
+            {
+                "name": "DayZ.com",
+                "date": "2016-03"
+            },
+            {
+                "name": "ArmorGames.com",
+                "date": "2019-01"
+            },
+            {
+                "name": "Sprashivai.ru",
+                "date": "2015-05"
+            },
+            {
+                "name": "Gamers.nu",
+                "date": "2011-11"
+            },
+            {
+                "name": "Dirtycode.io",
+                "date": "2020-05"
+            },
+            {
+                "name": "Famm.us",
+                "date": "2020-09"
+            },
+            {
+                "name": "gPotato.com",
+                "date": "2006-11"
+            },
+            {
+                "name": "Storenvy",
+                "date": "2019-03"
+            },
+            {
+                "name": "CrackingForum.com",
+                "date": "2014-11"
+            },
+            {
+                "name": "VipHackForums.net",
+                "date": "2013-11"
+            },
+            {
+                "name": "Poshmark.com",
+                "date": "2018-05"
+            },
+            {
+                "name": "Readnovel.com",
+                "date": "2019-04"
+            },
+            {
+                "name": "FFShrine.org",
+                "date": "2015-09"
+            },
+            {
+                "name": "vBulletin.org",
+                "date": "2016-02"
+            },
+            {
+                "name": "Villavu.com",
+                "date": "2013-11"
+            },
+            {
+                "name": "WiiUISO.com",
+                "date": "2015-08"
+            },
+            {
+                "name": "Scam.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "DLH.net",
+                "date": "2016-07"
+            },
+            {
+                "name": "rbx.rocks",
+                "date": "2018-08"
+            },
+            {
+                "name": "MajorGeeks.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "PSPISO.com",
+                "date": "2015-09"
+            },
+            {
+                "name": "RSBoards.com",
+                "date": "2013-07"
+            },
+            {
+                "name": "Ria.ru",
+                "date": "2022-04"
+            },
+            {
+                "name": "Last.fm",
+                "date": "2012-07"
+            },
+            {
+                "name": "IPMart-Forum.com",
+                "date": "2015-12"
+            },
+            {
+                "name": "Webhostingtalk.com",
+                "date": "2016-09"
+            },
+            {
+                "name": "Strongholdkingdoms.com",
+                "date": "2018-07"
+            },
+            {
+                "name": "DDO.com",
+                "date": "2013-04"
+            },
+            {
+                "name": "Crimecraft.mayngames.com",
+                "date": "2021-01"
+            },
+            {
+                "name": "Bolt.cd",
+                "date": "2017-03"
+            },
+            {
+                "name": "Torrent-Invites.com",
+                "date": "2016-07"
+            },
+            {
+                "name": "Board.freeones.com",
+                "date": "2018-01"
+            },
+            {
+                "name": "R2Games.com",
+                "date": "2015-11"
+            },
+            {
+                "name": "Avast.com",
+                "date": "2014-05"
+            },
+            {
+                "name": "Mpgh.net",
+                "date": "2015-10"
+            },
+            {
+                "name": "8Tracks.com",
+                "date": "2017-06"
+            },
+            {
+                "name": "Mobifriends",
+                "date": "2019-11"
+            },
+            {
+                "name": "ILikeCheats.com",
+                "date": "2015-04"
+            },
+            {
+                "name": "CashCrate.com",
+                "date": "2016-11"
+            },
+            {
+                "name": "Duelingnetwork.com",
+                "date": "2017-03"
+            },
+            {
+                "name": "500px.com",
+                "date": "2017-11"
+            },
+            {
+                "name": "Canva.com",
+                "date": "2019-05"
+            },
+            {
+                "name": "Demonforums.net",
+                "date": "2019-02"
+            },
+            {
+                "name": "Sexclub.ru",
+                "date": "2021-07"
+            },
+            {
+                "name": "Rewasd.com",
+                "date": "2019-08"
+            },
+            {
+                "name": "MSPAforums.com",
+                "date": "2016-02"
+            },
+            {
+                "name": "Bookmate.com",
+                "date": "2018-07"
+            },
+            {
+                "name": "WeHeartIt.com",
+                "date": "2013-10"
+            },
+            {
+                "name": "Solomid.net",
+                "date": "2014-10"
+            },
+            {
+                "name": "OwnedCore.com",
+                "date": "2013-07"
+            },
+            {
+                "name": "AndroidForums.com",
+                "date": "2011-10"
+            }
+        ]
+    },
+    {
+        "query": "sbren",
+        "timestamp": "2025-04-29T16:53:30.402253",
+        "found": 21,
+        "sources": [
+            {
+                "name": "AnimalJam.com",
+                "date": "2020-09"
+            },
+            {
+                "name": "8Tracks.com",
+                "date": "2017-06"
+            },
+            {
+                "name": "JDBBX.com",
+                "date": "2016-11"
+            },
+            {
+                "name": "Poshmark.com",
+                "date": "2018-05"
+            },
+            {
+                "name": "Zynga.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "Mate1.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "Craftrise.com.tr",
+                "date": "2022-03"
+            },
+            {
+                "name": "AdultFriendFinder",
+                "date": "2016-10"
+            },
+            {
+                "name": "Dubsmash.com",
+                "date": "2018-12"
+            },
+            {
+                "name": "Last.fm",
+                "date": "2012-07"
+            },
+            {
+                "name": "Edmodo",
+                "date": "2017-05"
+            },
+            {
+                "name": "Deezer.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "Gatehub.net",
+                "date": "2019-06"
+            },
+            {
+                "name": "WeHeartIt.com",
+                "date": "2013-10"
+            },
+            {
+                "name": "MyFitnessPal.com",
+                "date": "2018-02"
+            },
+            {
+                "name": "iMesh.com",
+                "date": "2013-09"
+            },
+            {
+                "name": "HiAPK.com",
+                "date": "2014-01"
+            },
+            {
+                "name": "Dota2hentai",
+                "date": "2021-01"
+            },
+            {
+                "name": "Dailymotion.com",
+                "date": "2016-10"
+            }
+        ]
+    },
+    {
+        "query": "sbren",
+        "timestamp": "2025-04-29T16:53:30.418540",
+        "found": 21,
+        "sources": [
+            {
+                "name": "AnimalJam.com",
+                "date": "2020-09"
+            },
+            {
+                "name": "8Tracks.com",
+                "date": "2017-06"
+            },
+            {
+                "name": "JDBBX.com",
+                "date": "2016-11"
+            },
+            {
+                "name": "Poshmark.com",
+                "date": "2018-05"
+            },
+            {
+                "name": "Zynga.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "Mate1.com",
+                "date": "2015-10"
+            },
+            {
+                "name": "Craftrise.com.tr",
+                "date": "2022-03"
+            },
+            {
+                "name": "AdultFriendFinder",
+                "date": "2016-10"
+            },
+            {
+                "name": "Dubsmash.com",
+                "date": "2018-12"
+            },
+            {
+                "name": "Last.fm",
+                "date": "2012-07"
+            },
+            {
+                "name": "Edmodo",
+                "date": "2017-05"
+            },
+            {
+                "name": "Deezer.com",
+                "date": "2019-09"
+            },
+            {
+                "name": "Gatehub.net",
+                "date": "2019-06"
+            },
+            {
+                "name": "WeHeartIt.com",
+                "date": "2013-10"
+            },
+            {
+                "name": "MyFitnessPal.com",
+                "date": "2018-02"
+            },
+            {
+                "name": "iMesh.com",
+                "date": "2013-09"
+            },
+            {
+                "name": "HiAPK.com",
+                "date": "2014-01"
+            },
+            {
+                "name": "Dota2hentai",
+                "date": "2021-01"
+            },
+            {
+                "name": "Dailymotion.com",
+                "date": "2016-10"
+            }
+        ]
     }
 ]

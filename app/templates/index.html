@@ -19,6 +19,15 @@
                 <li><strong>{{ source.name }}</strong> — {{ source.date }}</li>
             {% endfor %}
         </ul>
+    
+    {% if results.sources %}
+    <form action="/export_csv" method="post">
+        <input type="hidden" name="sources_json" value='{{ results.sources | tojson }}'>
+        <input type="hidden" name="query" value='{{ results.query }}'>
+        <button type="submit">⬇️ Download Breach Report (CSV)</button>
+    </form>
+    {% endif %}
+    
 
         <p>📌 Fields exposed: {{ results.fields | join(', ') }}</p>
         <small>Powered by <a href="https://leakcheck.io" target="_blank">LeakCheck</a></small>

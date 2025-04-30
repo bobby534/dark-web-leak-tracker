@@ -1,0 +1,32 @@
+[
+    {
+        "query": "tom",
+        "timestamp": "2025-04-29T16:52:44.327706",
+        "found": 1000
+    },
+    {
+        "query": "bob",
+        "timestamp": "2025-04-29T16:53:11.161959",
+        "found": 1000
+    },
+    {
+        "query": "toomo",
+        "timestamp": "2025-04-29T16:53:14.359992",
+        "found": 31
+    },
+    {
+        "query": "tom",
+        "timestamp": "2025-04-29T16:53:16.378818",
+        "found": 1000
+    },
+    {
+        "query": "sbren",
+        "timestamp": "2025-04-29T16:53:30.423618",
+        "found": 21
+    },
+    {
+        "query": "sbren",
+        "timestamp": "2025-04-29T16:53:30.468273",
+        "found": 21
+    }
+]

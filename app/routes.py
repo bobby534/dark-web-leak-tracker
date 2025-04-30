@@ -1,5 +1,8 @@
 from flask import Blueprint, render_template, request
 from app.utils import check_breaches, generate_charts, clean_sources_light, save_search, save_query_log
+from flask import send_file
+import csv
+import io
 
 main = Blueprint("main", __name__)
 
@@ -18,6 +21,7 @@ def index():
                 cleaned_sources = clean_sources_light(data["sources"])
                 data["sources"] = cleaned_sources  # Overwrite with cleaned sources
                 results = data
+                results["query"] = query  # Add query to results for CSV export
                 charts = generate_charts(data)
                 save_search(query, data)  # Save search to history file
                 save_query_log(query, data["found"]) # Queries only
@@ -25,3 +29,38 @@ def index():
                 error = data.get("error", "Something went wrong.")
 
     return render_template("index.html", results=results, error=error, charts=charts)
+
+
+@main.route("/export_csv", methods=["POST"])
+def export_csv():
+    # Get data from form
+    sources = request.form.get("sources_json")
+    query = request.form.get("query")
+
+    if not sources or not query:
+        return "Missing data", 400
+
+    # Convert JSON string to Python list
+    import json
+    try:
+        source_list = json.loads(sources)
+    except json.JSONDecodeError:
+        return "Invalid JSON", 400
+
+    # Create in-memory CSV
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow(["Breach Name", "Date"])
+
+    for breach in source_list:
+        writer.writerow([breach.get("name", "Unknown"), breach.get("date", "N/A")])
+
+    output.seek(0)
+
+    filename = f"breach_report_{query.replace('@', '_at_')}.csv"
+    return send_file(
+        io.BytesIO(output.getvalue().encode()),
+        mimetype="text/csv",
+        as_attachment=True,
+        download_name=filename
+    )
