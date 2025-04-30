@@ -4,6 +4,7 @@ from app.utils import add_to_watchlist, check_breaches, generate_charts, clean_s
 import csv
 import io
 import json
+from app.intelx_utils import search_intelx
 
 
 main = Blueprint("main", __name__)
@@ -29,6 +30,9 @@ def index():
                 charts = generate_charts(data)
                 save_search(query, data)  # Save search to history file
                 save_query_log(query, data["found"]) # Queries only
+
+                intelx_results = search_intelx(query)
+                results["intelx"] = intelx_results
             else:
                 error = data.get("error", "Something went wrong.")
     if os.path.exists(watchlist_file):

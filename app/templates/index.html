@@ -32,6 +32,21 @@
     </form>
     {% endif %}
     
+    {% if results.intelx and results.intelx.selectors %}
+        <h3>🔍 IntelX Results</h3>
+        <ul>
+            {% for selector in results.intelx.selectors %}
+                <li>
+                    ID: {{ selector.id }} |
+                    Type: {{ selector.type }} |
+                    Value: {{ selector.selectorvalue }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% elif results.intelx and results.intelx.error %}
+        <p style="color: red;">IntelX Error: {{ results.intelx.error }}</p>
+    {% endif %}
+
 
         <p>📌 Fields exposed: {{ results.fields | join(', ') }}</p>
         <small>Powered by <a href="https://leakcheck.io" target="_blank">LeakCheck</a></small>
