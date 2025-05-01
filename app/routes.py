@@ -5,6 +5,7 @@ import csv
 import io
 import json
 from app.intelx_utils import search_intelx
+from app.utils import merge_breach_sources
 
 
 main = Blueprint("main", __name__)
@@ -18,23 +19,33 @@ def index():
     watchlist_file = "data/watchlist.json"
 
     if request.method == "POST":
-        query = request.form.get("email")
+    query = request.form.get("email")
         if query:
             data = check_breaches(query)
 
             if data.get("success"):
+                # Clean LeakCheck results
                 cleaned_sources = clean_sources_light(data["sources"])
-                data["sources"] = cleaned_sources  # Overwrite with cleaned sources
-                results = data
-                results["query"] = query  # Add query to results for CSV export
-                charts = generate_charts(data)
-                save_search(query, data)  # Save search to history file
-                save_query_log(query, data["found"]) # Queries only
 
+                # Get IntelX results
                 intelx_results = search_intelx(query)
+
+                # Merge and sort
+                merged_sources = merge_breach_sources(cleaned_sources, intelx_results)
+
+                # Final output package
+                data["sources"] = merged_sources  # Replaces with combined list
+                results = data
                 results["intelx"] = intelx_results
+                results["query"] = query
+
+                # Generate chart and save
+                charts = generate_charts(data)
+                save_search(query, data)
+                save_query_log(query, data["found"])
             else:
                 error = data.get("error", "Something went wrong.")
+
     if os.path.exists(watchlist_file):
         with open(watchlist_file, "r") as f:
             try:
@@ -89,3 +100,4 @@ def add_to_watchlist_route():
     message = "Added to watchlist" if success else "Already in watchlist"
     
     return redirect("/", code=302)  # Or flash message later
+

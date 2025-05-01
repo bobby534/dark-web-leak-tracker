@@ -23,17 +23,22 @@ def check_breaches(email_or_username):
         return {"success": False, "error": str(e)}
 
 def generate_charts(breach_data):
+    import pandas as pd
+    import plotly.express as px
+
     timeline_fig = None
 
     if "sources" in breach_data:
-        cleaned_sources = clean_sources_light(breach_data["sources"])
-        df = pd.DataFrame(cleaned_sources)
+        df = pd.DataFrame(breach_data["sources"])
+        df = df[df["date"] != "Unknown"]  # filter out fake dates
 
         if not df.empty:
-            df['date'] = pd.to_datetime(df['date'], format="%Y-%m")
-            df['year'] = df['date'].dt.year
-            timeline_fig = px.histogram(df, x="year", nbins=len(df['year'].unique()),
-                                        title="Breaches by Year", labels={"year": "Year"})
+            df["date"] = pd.to_datetime(df["date"], format="%Y-%m", errors="coerce")
+            df = df.dropna(subset=["date"])  # remove invalid rows
+            df["year"] = df["date"].dt.year
+
+            timeline_fig = px.histogram(df, x="year", nbins=len(df["year"].unique()),
+                                        title="Combined Breaches by Year", labels={"year": "Year"})
 
     return {
         "timeline": timeline_fig.to_html(full_html=False) if timeline_fig else None
@@ -128,3 +133,40 @@ def add_to_watchlist(query, watchlist_file="data/watchlist.json"):
 
         return True  # Added successfully
     return False  # Already existed
+
+def merge_breach_sources(leakcheck_sources, intelx_results):
+    """
+    Combine and sort breach sources from LeakCheck and IntelX by date descending.
+    """
+    combined = []
+
+    # Add LeakCheck sources (assumed already cleaned)
+    for breach in leakcheck_sources:
+        if breach.get("name") and breach.get("date"):
+            combined.append({
+                "name": breach["name"],
+                "date": breach["date"]
+            })
+
+    # Add IntelX selectors (no date, but we add them)
+    selectors = intelx_results.get("selectors", []) if intelx_results else []
+    for selector in selectors:
+        combined.append({
+            "name": selector.get("selectorvalue", "Unknown"),
+            "date": "Unknown"  # No dates from IntelX
+        })
+
+    # Deduplicate by name
+    seen = set()
+    deduped = []
+    for item in combined:
+        if item["name"] not in seen:
+            deduped.append(item)
+            seen.add(item["name"])
+
+    # Sort by date descending (Unknown goes last)
+    def sort_key(b):
+        return b["date"] if b["date"] != "Unknown" else ""
+
+    deduped.sort(key=sort_key, reverse=True)
+    return deduped

@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()  # Load from .env
 
 INTELX_API_KEY = os.getenv("INTELX_API_KEY")
-BASE_URL = "https://2.intelx.io"
+BASE_URL = "https://free.intelx.io"
 
 def search_intelx(query, max_results=5):
     headers = {

@@ -53,5 +53,45 @@
         "query": "tom",
         "timestamp": "2025-04-30T13:24:11.791097",
         "found": 1000
+    },
+    {
+        "query": "coomputer",
+        "timestamp": "2025-04-30T16:07:58.278574",
+        "found": 4
+    },
+    {
+        "query": "coomputer",
+        "timestamp": "2025-04-30T16:11:51.499866",
+        "found": 4
+    },
+    {
+        "query": "bob",
+        "timestamp": "2025-04-30T16:12:05.175016",
+        "found": 1000
+    },
+    {
+        "query": "bob",
+        "timestamp": "2025-04-30T16:23:38.223269",
+        "found": 1000
+    },
+    {
+        "query": "phone",
+        "timestamp": "2025-04-30T16:23:49.583562",
+        "found": 1000
+    },
+    {
+        "query": "kerry@gmail.com",
+        "timestamp": "2025-04-30T16:24:02.640454",
+        "found": 305
+    },
+    {
+        "query": "tom",
+        "timestamp": "2025-05-01T13:23:45.602838",
+        "found": 1000
+    },
+    {
+        "query": "tom@gmail.com",
+        "timestamp": "2025-05-01T13:24:43.743116",
+        "found": 1000
     }
 ]
