@@ -93,5 +93,25 @@
         "query": "tom@gmail.com",
         "timestamp": "2025-05-01T13:24:43.743116",
         "found": 1000
+    },
+    {
+        "query": "tom@gmail.com",
+        "timestamp": "2025-05-01T16:22:28.333099",
+        "found": 1000
+    },
+    {
+        "query": "tom@gmail.com",
+        "timestamp": "2025-05-01T16:23:29.452164",
+        "found": 1000
+    },
+    {
+        "query": "tom@gmail.com",
+        "timestamp": "2025-05-01T16:23:49.944663",
+        "found": 1000
+    },
+    {
+        "query": "phone@gmail.com",
+        "timestamp": "2025-05-01T16:24:40.444249",
+        "found": 395
     }
 ]

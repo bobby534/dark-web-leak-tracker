@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Web Leak Tracker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Web Leak Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>🔍 Breach Lookup</h1>
-    <form method="POST">
-        <input type="text" name="email" placeholder="Enter email or username" required>
-        <button type="submit">Search</button>
-    </form>
+<body class="bg-light">
+  <div class="container py-4">
+    <div class="row">
 
-    {% if results %}
-        <h2>Breaches Found: {{ results.found }}</h2>
-        <ul>
+      <!-- Left: Search + Results -->
+      <div class="col-md-8">
+        <h2 class="mb-4">🔍 Breach Lookup</h2>
+        <form method="POST" class="mb-3">
+          <div class="input-group">
+            <input type="text" name="email" class="form-control" placeholder="Enter email or username" required>
+            <button class="btn btn-primary" type="submit">Search</button>
+          </div>
+        </form>
+
+        {% if results %}
+        <div class="card mb-3">
+          <div class="card-header">Breaches Found: {{ results.found }}</div>
+          <ul class="list-group list-group-flush">
             {% for source in results.sources %}
-                <li><strong>{{ source.name }}</strong> — {{ source.date }}</li>
+              <li class="list-group-item">
+                <strong>{{ source.name }}</strong> — {{ source.date }}
+              </li>
             {% endfor %}
-            <form action="/add_to_watchlist" method="post">
-                <input type="hidden" name="query" value="{{ results.query }}">
-                <button type="submit">📌 Add to Watchlist</button>
-            </form>            
-        </ul>
-    
-    {% if results.sources %}
-    <form action="/export_csv" method="post">
-        <input type="hidden" name="sources_json" value='{{ results.sources | tojson }}'>
-        <input type="hidden" name="query" value='{{ results.query }}'>
-        <button type="submit">⬇️ Download Breach Report (CSV)</button>
-    </form>
-    {% endif %}
+          </ul>
+        </div>
 
-    {% elif error %}
-        <p style="color: red;">Error: {{ error }}</p>
-    {% endif %}
+        <form action="/add_to_watchlist" method="post" class="mb-3">
+            <input type="hidden" name="query" value="{{ results.query }}">
+            <button type="submit" class="btn btn-warning">📌 Add to Watchlist</button>
+        </form>
+        {% endif %}
 
-    {% if watchlist %}
-        <h3>🔔 Watchlist</h3>
-        <ul>
+        {% if charts.timeline %}
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-title">📅 Breaches Over Time</h5>
+              {{ charts.timeline|safe }}
+            </div>
+          </div>
+        {% endif %}
+
+        {% if error %}
+          <div class="alert alert-danger mt-3">{{ error }}</div>
+        {% endif %}
+      </div>
+
+      <!-- Right: Watchlist + Export -->
+      <div class="col-md-4">
+        {% if watchlist %}
+        <div class="card mb-3">
+          <div class="card-header">🔔 Watchlist</div>
+          <ul class="list-group list-group-flush">
             {% for item in watchlist %}
-                <li>{{ item }}</li>
+              <li class="list-group-item">{{ item }}</li>
             {% endfor %}
-        </ul>
-    {% endif %}
+          </ul>
+        </div>
+        {% endif %}
 
-
-    {% if charts.timeline %}
-    <h3>📅 Breaches Over Time</h3>
-    {{ charts.timeline|safe }}
-    {% endif %}
-
+        {% if results and results.sources %}
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">⬇️ Download Report</h5>
+            <form action="/export_csv" method="post">
+              <input type="hidden" name="sources_json" value='{{ results.sources | tojson }}'>
+              <input type="hidden" name="query" value='{{ results.query }}'>
+              <button type="submit" class="btn btn-success w-100">Download Breach Report (CSV)</button>
+            </form>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </body>
 </html>

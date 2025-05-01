@@ -19,7 +19,7 @@ def index():
     watchlist_file = "data/watchlist.json"
 
     if request.method == "POST":
-    query = request.form.get("email")
+        query = request.form.get("email")
         if query:
             data = check_breaches(query)
 
