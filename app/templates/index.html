@@ -52,18 +52,23 @@
         {% endif %}
       </div>
 
-      <!-- Right: Watchlist + Export -->
-      <div class="col-md-4">
         {% if watchlist %}
         <div class="card mb-3">
-          <div class="card-header">🔔 Watchlist</div>
-          <ul class="list-group list-group-flush">
-            {% for item in watchlist %}
-              <li class="list-group-item">{{ item }}</li>
-            {% endfor %}
-          </ul>
+            <div class="card-header">🔔 Watchlist</div>
+            <ul class="list-group list-group-flush">
+                {% for item in watchlist %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        {{ item }}
+                        <form action="/remove_from_watchlist" method="post" style="margin: 0;">
+                            <input type="hidden" name="item" value="{{ item }}">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">🗑</button>
+                        </form>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
         {% endif %}
+    
 
         {% if results and results.sources %}
         <div class="card">

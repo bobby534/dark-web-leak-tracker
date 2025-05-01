@@ -1,5 +1,5 @@
 import os
-from flask import Blueprint, send_file, redirect, render_template, request
+from flask import Blueprint, flash, send_file, redirect, render_template, request
 from app.utils import add_to_watchlist, check_breaches, generate_charts, clean_sources_light, save_search, save_query_log
 import csv
 import io
@@ -101,3 +101,19 @@ def add_to_watchlist_route():
     
     return redirect("/", code=302)  # Or flash message later
 
+@main.route("/remove_from_watchlist", methods=["POST"])
+def remove_from_watchlist():
+    item = request.form.get("item")
+    file_path = "data/watchlist.json"
+
+    if os.path.exists(file_path):
+        with open(file_path, "r") as f:
+            watchlist = json.load(f)
+
+        if item in watchlist:
+            watchlist.remove(item)
+            with open(file_path, "w") as f:
+                json.dump(watchlist, f, indent=4)
+            flash(f"❌ Removed '{item}' from watchlist", "warning")
+
+    return redirect("/")
