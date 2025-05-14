@@ -90,16 +90,23 @@ def export_csv():
         download_name=filename
     )
 
+from flask import redirect, flash
+
 @main.route("/add_to_watchlist", methods=["POST"])
 def add_to_watchlist_route():
     query = request.form.get("query")
     if not query:
-        return "Missing query", 400
+        flash("Missing query", "danger")
+        return redirect("/")
 
     success = add_to_watchlist(query)
-    message = "Added to watchlist" if success else "Already in watchlist"
-    
-    return redirect("/", code=302)  # Or flash message later
+    if success:
+        flash(f"✅ Added '{query}' to watchlist", "success")
+    else:
+        flash(f"⚠️ '{query}' is already in watchlist", "info")
+
+    return redirect("/")
+
 
 @main.route("/remove_from_watchlist", methods=["POST"])
 def remove_from_watchlist():

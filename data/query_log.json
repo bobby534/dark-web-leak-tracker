@@ -113,5 +113,20 @@
         "query": "phone@gmail.com",
         "timestamp": "2025-05-01T16:24:40.444249",
         "found": 395
+    },
+    {
+        "query": "bob",
+        "timestamp": "2025-05-13T23:25:13.677286",
+        "found": 1000
+    },
+    {
+        "query": "kerry@gmail.com",
+        "timestamp": "2025-05-13T23:30:05.858115",
+        "found": 305
+    },
+    {
+        "query": "fat",
+        "timestamp": "2025-05-13T23:30:30.990737",
+        "found": 1000
     }
 ]
